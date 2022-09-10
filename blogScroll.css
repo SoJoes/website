@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+
+.leftcolumn{
+    right: 15rem;
+    width:75%;
+    max-width: 80rem;
+    float: left;
+}
+
+.rightcolumn{
+    height: 100%;
+    width: 20%;
+    float: left;
+
+}
+
+.card{
+    position: relative;
+    padding:20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.smallCard{
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.row{
+    margin:auto;
+    width: 55%;
+    background-color: red;
+    justify-content: center;
+}
+
+@media screen and (max-width: 70rem) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  .row {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+img.leftImage{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.cardHeader{
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    color:white;
+    font-size: 3rem;
+}
+
+.date{
+    text-align: left;
+    padding: 0px;
+}
+
+.topnav{
+    background-color: #333;
+    height: 40px;
+    width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.rightImage{
+    width: 100%;
+    max-height: 10rem;
+    display: flex;
+    justify-contnet:center;
+    object-fit: cover;
+}
+.header{
+    padding-left: 1.5rem;
+}
