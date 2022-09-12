@@ -26,7 +26,10 @@ function myFunction() {
   if (window.pageYOffset >= sticky) {
     document.getElementById('topnav').style.position = "fixed";
     document.getElementById('topnav').style.top = "0px";
+    document.getElementById('id1').style.paddingBottom = "45px";
+
   } else {
     document.getElementById('topnav').style.position = "relative";
+    document.getElementById('id1').style.paddingBottom = "0px";
   }
 }

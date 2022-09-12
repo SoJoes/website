@@ -5,6 +5,8 @@
 body{
     font-family: 'poppins', sans-serif;
     margin: 0;
+    color: #12130F;
+    background-color: #EAE6E5;
 }
 
 .leftcolumn{
@@ -23,11 +25,18 @@ body{
 
 .card{
     position: relative;
+    cursor: pointer;
     padding:20px;
     margin-top: 20px;
     border-radius: 10px;
+    background-color: #5B9279;
+    color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    }
+
+.card:hover{
+    background-color: #68A187;
+    }
 
 .smallCard{
     padding-left: 20px;
@@ -63,7 +72,7 @@ img.leftImage{
     position: absolute;
     top: 0px;
     left: 45px;
-    color:white;
+    color: white;
     font-size: 3rem;
 }
 
@@ -72,10 +81,13 @@ img.leftImage{
     padding: 0px;
 }
 
-.topnav{
-    background-color: #333;
-    height: 40px;
+#topnav{
+    height: 45px;
     width: 100%;
+    background-color: #5B9279;
+    border-color: black;
+    z-index: 100;
+    top: 0px;
 }
 
 ul {
@@ -83,7 +95,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 li {
@@ -92,6 +103,7 @@ li {
 
 li a {
   display: block;
+  cursor: pointer;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -99,7 +111,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #68A187;
+  overflow: hidden;
 }
 
 .rightImage{
@@ -111,4 +124,31 @@ li a:hover {
 }
 .header{
     padding-left: 1.5rem;
+}
+
+.blogcontent{
+    max-width: 40rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 50px #ccc;
+    position: absolute;
+    top: 35%;
+}
+
+.blogtopimg{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+.blogheader h1{
+    font-size: 3rem;
 }
