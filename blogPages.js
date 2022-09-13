@@ -12,7 +12,7 @@ var progressing = true;
 
 function declareVars() {
     // Get the navbar
-    navbar = document.getElementById("topnav");
+    navbar = document.getElementById("topsticky");
 
     // Get the offset position of the navbar
     sticky = getOffset(navbar).top;
@@ -33,13 +33,16 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
 
   if (window.pageYOffset >= sticky) {
-    document.getElementById('topnav').style.position = "fixed";
-    document.getElementById('topnav').style.top = "0px";
-    document.getElementById('id1').style.paddingBottom = "45px";
+    document.getElementById('topsticky').style.position = "fixed";
+    document.getElementById('topsticky').style.top = "0px";
+
+    document.getElementById('ontop').style.position = "fixed";
+    document.getElementById('ontop').style.top = "48px";
 
   } else {
-    document.getElementById('topnav').style.position = "relative";
-    document.getElementById('id1').style.paddingBottom = "0px";
+    document.getElementById('topsticky').style.position = "relative";
+    document.getElementById('ontop').style.position = "relative";
+    document.getElementById('ontop').style.top = "0px";
   }
 
   if (progressing == true){
@@ -53,6 +56,8 @@ function myFunction() {
 
       if (scrolled >=100){
         progressing = false;
+
+        document.getElementById("myBar").style.width = "100%";
         document.getElementById("myBar").style.background = "linear-gradient(to right, #81ed86 , #81ed86)";
   }}
 }

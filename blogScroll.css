@@ -5,8 +5,8 @@
 body{
     font-family: 'poppins', sans-serif;
     margin: 0;
-    color: #12130F;
-    background-color: #EAE6E5;
+    color: #F5F5F5;
+    background-color: #101010;
 }
 
 .leftcolumn{
@@ -29,18 +29,24 @@ body{
     padding:20px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: #5B9279;
+    background-color: #151515;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 21rem;
     }
 
 .card:hover{
-    background-color: #68A187;
+    background-color: rgba(42, 133, 179, 0.87);
     }
 
 .smallCard{
     padding-left: 20px;
     margin-top: 20px;
+    color:white;
+}
+
+.smallCard h2{
+    color: white;
 }
 
 .row{
@@ -66,6 +72,12 @@ img.leftImage{
     height: 10rem;
     object-fit: cover;
     padding: 0px;
+    filter: blur(3px) brightness(20%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card:hover img{
+    filter: blur(3px) brightness(50%);
 }
 
 .cardHeader{
@@ -79,16 +91,15 @@ img.leftImage{
 .date{
     text-align: left;
     padding: 0px;
+    color: white;
 }
 
-#topnav{
-    height: 40px;
+#topsticky{
+    height: 43px;
     width: 100%;
-    background-color: #5B9279;
-    border-color: black;
-    z-index: 100;
-    top: 0px;
+    background-color: #141414;
     overflow: visible;
+    z-index: 100;
 }
 
 ul {
@@ -106,16 +117,15 @@ li {
 li a {
   display: block;
   cursor: pointer;
-  color: white;
+  color: #F5F5F5;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #68A187;
+  background-color: #2a86b3;
   height: 40px;
-  z-index: 100;
 }
 
 .rightImage{
@@ -126,7 +136,15 @@ li a:hover {
     object-fit: cover;
 }
 .header{
-    padding-left: 1.5rem;
+    height: 4rem;
+}
+
+#id1{
+  width: 16rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  color: white;
 }
 
 .blogcontent{
@@ -134,20 +152,35 @@ li a:hover {
     margin: auto;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: #141414;
     padding: 0px 20px 20px 20px;
-    box-shadow: 0 0 50px #ccc;
+    box-shadow: 3px 2px 29px 13px rgba(0,0,0,0.27);
     position: absolute;
     top: 35%;
     border-radius: 10px;
+    color: lightgray;
+    z-index:0;
+}
+
+h1, h4{
+    color: #e13b8d;
+}
+
+h2, h5{
+    color: #dbca05;
+}
+
+h3, h6{
+    color: #2a86b3;
 }
 
 .blogtopimg{
-    width: 100%;
+    content:url("bgimages/colourback.png");
     height: 30rem;
+    width: 100%;
     object-fit: cover;
-    position: absolute;
-    box-shadow: 0 0 40px 40px white inset;
+    position: static;
+
 }
 
 a{
@@ -156,6 +189,24 @@ a{
 
 .blogheader h1{
     font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #2a86b3;
+    text-underline-offset: 4px;
+}
+
+.blogimg{
+    margin: auto;
+    width: 125%;
+    margin-left: -12.5%;
+    box-shadow: 3px 2px 29px 13px rgba(0,0,0,0.27);
+    border-bottom: 5px solid #ccc;
+    margin-bottom: 2.4rem;
+}
+
+.blogimg img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
 }
 
 /* The progress container (grey background) */
@@ -164,7 +215,6 @@ a{
   height: 8px;
   background: #ccc;
   margin-top: -5px;
-  z-index: 0;
 }
 
 /* The progress bar (scroll indicator) */
